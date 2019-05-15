@@ -66,9 +66,9 @@
       id: 16
     },
     {
-      name: 'DeadBaby',
+      name: 'Cute Puppy',
       image: 'https://images-na.ssl-images-amazon.com/images/I/61I4Bpj7DCL._SL1000_.jpg',
-      likes: null,
+      likes: 100,
       id: 22
     },
     {

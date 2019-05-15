@@ -6,8 +6,7 @@ function ToyCard(props) {
             <h2 className="toy-name">{props.singleToy.name}</h2>
             <img className="toy-avatar" src={props.singleToy.image} alt=" "/>
             <p className="toy-likes">{props.singleToy.likes} Likes</p>
-            <button className="lkBtn" onClick={(e)=>props.handleLike(e)}>Like</button>
-        
+            <button className="lkBtn" onClick={() => props.handleLike(props.singleToy.id)}>Like</button>
         </div>
     )
 

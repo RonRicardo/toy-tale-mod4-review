@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
-// import './App.css';
 import ToyContainer from './ToyContainer';
-import toys from './resources/toys';
 import './index.css';
 class App extends Component {
-  constructor() {
-    super()
-  }
-
   render() {
     return (
       <div className="App">

@@ -13,7 +13,7 @@ class ToyContainer extends Component {
 
   handleLike = (id) => {
     let newList = this.state.allToys.map(toy => {
-      if (toy.id == id) {
+      if (toy.id === id) {
         toy.likes += 1
         return toy
       } else {
@@ -26,6 +26,7 @@ class ToyContainer extends Component {
   }
 
   handleSubmit = (event) => {
+    debugger
     let singleToy = {
       name: event.target[0].value,
       image: event.target[1].value,
@@ -46,7 +47,7 @@ class ToyContainer extends Component {
       return (
         <div>
           <ToyForm handleSubmit={this.handleSubmit}/>
-          {this.state.allToys.map(toy => <ToyCard handleLike={this.handleLike} singleToy={toy}/>)}
+          {this.state.allToys.map(toy => <ToyCard key={toy.id} handleLike={this.handleLike} singleToy={toy}/>)}
         </div>
       )
     }

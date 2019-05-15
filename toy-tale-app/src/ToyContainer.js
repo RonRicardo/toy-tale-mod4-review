@@ -26,7 +26,6 @@ class ToyContainer extends Component {
   }
 
   handleSubmit = (event) => {
-    debugger
     let singleToy = {
       name: event.target[0].value,
       image: event.target[1].value,
